@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<head><title>Nearest Pumps</title></head>
+<body>
+    <form >
+        <h1 style="margin-left: 200px;">Nearest Pumps</h1>
+        <table align="center" style="border: #303F9F;box-shadow: black;border: double;">
+           
+            <thead style="background-color: burlywood;" >
+                <tr>
+                    <th>Pump Name</th>
+                    <th>Address</th>
+                    <th>Book</th>
+                </tr>
+            </thead>
+            <tbody style="border: solid;">
+                
+                <% pumps.forEach(e=>{ %>
+                <tr style="background-color: slategrey;">
+                    <td><%= e.name%></td>
+                    <td><%= e.name%></td>
+                    <th>    <a href="/user/booking/<%= user%>/<%= e._id%>">
+                            <button type="button" onclick=`book(<%= user%>,<%= e._id%>)` >Book Pump</button>
+                            </a>
+        
+                    </th>
+                </tr> 
+            <% }) %>
+            
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+    <head>   
+        <title>  
+        Registration Page  
+        </title>  
+        </head>  
+        <body bgcolor="Lightskyblue">  
+        <br>  
+        <br>  
+        <form method="GET" action="/user">  
+          
+        <label> Name </label>         
+        <input type="text" name="name" size="15" value="Abhay"/> <br> <br>  
+     
+        <label>   
+        Type of Fuel :  
+        </label>   
+        <select name="typeOfFuel">  
+        <option value="petrol">Petrol</option>  
+        <option value="CNG">CNG</option>  
+        <option value="disel">DISEL</option>   
+        </select>  
+               
+        <label>   
+        Phone :  
+        </label>   
+        <input type="number" name="phone" size="10"/> <br> <br>  
+        Address : 
+        <br>  
+        <input value="Mohali" name="address" required> <br> <br>  
+        Email:  
+        <input type="email" id="email" name="email"/> <br>    
+        <br> <br> 
+        <button type="submit">Find Pumps</button> 
+        </form>  
+        </body>  
+        </html>
